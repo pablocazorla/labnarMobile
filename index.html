@@ -8,13 +8,53 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <!-- CSS -->
-  <link type="text/css" rel="stylesheet" href="css/style.css">
 
+  <!-- CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="css/theme.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>Labnar Mobile</h1>
+  <header id="main-header">
+    <div class="h-row">
+      <span id="menu-icon"><i class="fa fa-bars"></i></span>
+      <menu id="main-menu">
+        <span id="menu-close"><i class="fa fa-close"></i></span>
+        Menu        
+      </menu>
+      <div id="menu-backdrop"></div>
+      <a href="" class="brand">Labnar</a>
+      <div id="finder">
+        <i class="fa fa-search"></i>
+        <div class="finder-input-container">
+            <input type="search" placeholder="Buscar...">
+        </div>        
+      </div>    
+    </div>
+    <div class="h-row">
+      <nav id="frame-navigation">
+        <a href="#start-frame" class="active">Inicio</a>
+        <a href="#categories-frame">Categorías</a>
+        <a href="#my-account-frame">Mi cuenta</a>
+        <a href="#my-cart-frame"><i class="fa fa-shopping-cart"></i></a>
+      </nav>
+    </div>
+  </header>
+  <div id="shell">
+    <div class="frame" id="start-frame">
+      Inicio
+    </div>
+    <div class="frame" id="categories-frame">
+      Categorías
+    </div>
+    <div class="frame" id="my-account-frame">
+     Mi cuenta
+    </div>
+    <div class="frame" id="my-cart-frame">
+      Carrito
+    </div>
+  </div>
   <script src="js/libs/jquery-1.11.2.min.js"></script>
   <script src="js/app.js"></script>
 </body>
