@@ -8,7 +8,6 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
   <!-- CSS -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link type="text/css" rel="stylesheet" href="css/theme.css">
@@ -18,19 +17,18 @@
 <body>
   <header id="main-header">
     <div class="h-row">
-      <span id="menu-icon"><i class="fa fa-bars"></i></span>
+      <span id="menu-icon" class="menu-toggle"><i class="fa fa-bars"></i></span>
       <menu id="main-menu">
-        <span id="menu-close"><i class="fa fa-close"></i></span>
-        Menu        
+        <span id="menu-close" class="menu-toggle"><i class="fa fa-close"></i></span> Menu
       </menu>
-      <div id="menu-backdrop"></div>
+      <div id="menu-backdrop" class="menu-toggle"></div>
       <a href="" class="brand">Labnar</a>
       <div id="finder">
         <i class="fa fa-search"></i>
         <div class="finder-input-container">
-            <input type="search" placeholder="Buscar...">
-        </div>        
-      </div>    
+          <input type="search" placeholder="Buscar...">
+        </div>
+      </div>
     </div>
     <div class="h-row">
       <nav id="frame-navigation">
@@ -43,13 +41,139 @@
   </header>
   <div id="shell">
     <div class="frame" id="start-frame">
-      Inicio
+      <div class="wrap">
+        <section class="products">
+          <header class="header-section">
+            <h2>Últimos libros</h2>
+            <a href="" class="btn btn-primary btn-small float-right">Ver más</a>
+          </header>
+          <ul class="product-list grid">
+            <li>
+              <div class="paper product-list-element">
+                <a href="detalle.html" class="product-list-viewDetail">
+                  <img src="img/product-thumbs/dispara-yo-ya-estoy-muerto.jpg" class="product-thumbnail">
+                  <div class="product-list-summary">
+                    <h3>Dispara, yo ya estoy muerto</h3>
+                    <h4>Julia Navarro</h4>
+                    <p class="price"><strike>19,90 &euro;</strike> 15,99 &euro;</p>
+                  </div>
+                  <img src="img/sale-product.png" class="sale-product">
+                </a>
+                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
+              </div>
+            </li>
+            <li>
+              <div class="paper product-list-element">
+                <a href="detalle.html" class="product-list-viewDetail">
+                  <img src="img/product-thumbs/el-tiempo-entre-costuras.jpg" class="product-thumbnail">
+                  <div class="product-list-summary">
+                    <h3>El tiempo entre costuras</h3>
+                    <h4>María Dueñas</h4>
+                    <p class="price">19,99 &euro;</p>
+                  </div>
+                </a>
+                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
+              </div>
+            </li>
+            <li>
+              <div class="paper product-list-element">
+                <a href="detalle.html" class="product-list-viewDetail">
+                  <img src="img/product-thumbs/el-francotirador-paciente.jpg" class="product-thumbnail">
+                  <div class="product-list-summary">
+                    <h3>El francotirador paciente</h3>
+                    <h4>Arturo Pérez-Reverte</h4>
+                    <p class="price"><strike>23,00 &euro;</strike> 21,99 &euro;</p>
+                  </div>
+                  <img src="img/sale-product.png" class="sale-product">
+                </a>
+                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="news">
+          <header class="header-section">
+            <h2>Noticias</h2>
+            <a href="" class="btn btn-primary btn-small float-right">Ver más</a>
+          </header>
+          <ul class="news-list">
+            <li>
+              <div class="paper news-list-element">
+                <a href="" class="clearfix">
+                  <div class="thumb">
+                    <img src="img/news-thumb/fuerza-naturaleza.jpg" />
+                  </div>
+                  <div class="text">
+                    <h3>Fuerzas de la Naturaleza: Las Cenizas del Destino (2014)</h3>
+                    <p>Presentación Oficial de la novela Fuerzas...</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="paper news-list-element">
+                <a href="" class="clearfix">
+                  <div class="thumb">
+                    <img src="img/news-thumb/fuerza-naturaleza.jpg" />
+                  </div>
+                  <div class="text">
+                    <h3>Fuerzas de la Naturaleza: Las Cenizas del Destino (2014)</h3>
+                    <p>Presentación Oficial de la novela Fuerzas...</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <footer id="main-footer">
+        <div class="wrap">
+          2015 &copy; LABNAR HOLDING S.L. | <a href="">Aviso Legal</a> | <a href="">Diseño Web</a>
+        </div>
+      </footer>
     </div>
     <div class="frame" id="categories-frame">
-      Categorías
+      <menu class="menudinamico">
+        <ul>
+          <li>
+            <a href="familias.html">Novela</a>
+            <ul>
+              <li>
+                <a href="familias.html">Misterio</a>
+              </li>
+              <li class="elegido">
+                <a href="familias.html">Aventuras</a>
+              </li>
+              <li>
+                <a href="familias.html">Histórica</a>
+                <ul>
+                  <li>
+                    <a href="familias.html">Medieval</a>
+                  </li>
+                  <li>
+                    <a href="familias.html">Siglo XX</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="familias.html">Juvenil</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="familias.html">Ensayo</a>
+          </li>
+          <li>
+            <a href="familias.html">Infantil</a>
+          </li>
+          <li>
+            <a href="familias.html">Best-Seller</a>
+          </li>
+        </ul>
+      </menu>
     </div>
     <div class="frame" id="my-account-frame">
-     Mi cuenta
+      Mi cuenta
     </div>
     <div class="frame" id="my-cart-frame">
       Carrito

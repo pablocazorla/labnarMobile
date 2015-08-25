@@ -3,27 +3,32 @@ var labnarMobile = function($) {
 
 	// HEADER *************************************
 	// Menu
-	$('#main-header').each(function() {
-		var $header = $(this),
-			$menuIcon = $('#menu-icon'),
-			$menu = $('#main-menu'),
-			$menuClose = $('#menu-close').add('#menu-backdrop'),
-			shown = false,
-			cl = 'menu-shown';
-
-			$menuIcon.click(function(){
-				if(!shown){
-					$header.addClass(cl);
-					shown = true;
-				}
-			});
-			$menuClose.click(function(){
-				if(shown){
-					$header.removeClass(cl);
-					shown = false;
-				}
-			});
-	});
+	var menu = {
+		show: false,
+		$header: $('#main-header'),
+		cl: 'menu-shown',
+		show: function() {
+			if (!menu.shown) {
+				menu.$header.addClass(menu.cl);
+				menu.shown = true;
+			}
+		},
+		hide: function() {
+			if (menu.shown) {
+				menu.$header.removeClass(menu.cl);
+				menu.shown = false;
+			}
+		},
+		toggle: function() {
+			if (!menu.shown) {
+				menu.show();
+			} else {
+				menu.hide();
+			}
+		}
+	};
+	$('.menu-toggle').click(menu.toggle);
+	
 	// Finder
 	$('#finder').each(function() {
 		var $this = $(this),
