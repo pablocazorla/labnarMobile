@@ -19,10 +19,22 @@
     <div class="h-row">
       <span id="menu-icon" class="menu-toggle"><i class="fa fa-bars"></i></span>
       <menu id="main-menu">
-        <span id="menu-close" class="menu-toggle"><i class="fa fa-close"></i></span> Menu
+        <div class="main-menu-header">
+          <span id="menu-close" class="menu-toggle"><i class="fa fa-close"></i></span>
+          <a href="" class="brand">
+            <img src="img/logo.svg">
+          </a>
+        </div>
+        <ul>
+          <li><a href=""><i class="fa fa-book"></i> Editorial</a></li>
+          <li><a href=""><i class="fa fa-newspaper-o"></i> Noticias</a></li>
+          <li><a href=""><i class="fa fa-envelope"></i> Contacto</a></li>
+        </ul>
       </menu>
       <div id="menu-backdrop" class="menu-toggle"></div>
-      <a href="" class="brand">Labnar</a>
+      <a href="" class="brand">
+        <img src="img/logo.svg">
+      </a>
       <div id="finder">
         <i class="fa fa-search"></i>
         <div class="finder-input-container">
@@ -173,14 +185,46 @@
       </menu>
     </div>
     <div class="frame" id="my-account-frame">
-      Mi cuenta
+      <div class="wrap">
+        <section class="my-account">
+          <header class="header-section">
+            <h2>Mi cuenta</h2>
+            <a href="" class="btn btn-primary btn-small float-right">Registrarse</a>
+          </header>
+          <form method="post" class="paper" action="http://www.claveweb.info/labnar/usuario-validar?pg=" class="clearfix">
+            <h3>Usuarios registrados</h3>
+            <p class="required-advert">* Campos requeridos</p>
+            <input type="hidden" value="http://www.claveweb.info/labnar" name="pagina_origen">
+            <fieldset>
+              <label for="email" class="required">Email:</label>
+              <input type="text" value="" id="email" name="email" placeholder="nombre@ejemplo.com" />
+            </fieldset>
+            <fieldset>
+              <label for="clave" class="required">Contraseña:</label>
+              <input type="password" maxlength="10" id="clave" name="clave" placeholder="**********" />
+            </fieldset>
+            <p class="align-center">
+              <input type="submit" class="btn btn-secondary btn-big" value="Acceder" id="acceder" name="acceder" />
+            </p>
+            <p class="align-center forgot-pass"><a href="http://www.claveweb.info/labnar/usuario-recordar" class="btn btn-link btn-small">¿Olvidaste la contraseña?</a></p>
+          </form>
+        </section>
+      </div>
     </div>
     <div class="frame" id="my-cart-frame">
-      Carrito
-    </div>
-  </div>
-  <script src="js/libs/jquery-1.11.2.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
+      <div class="wrap">
+        <section class="my-account">
+          <header class="header-section">
+            <h2>Mis compras</h2>            
+          </header>
+          <div class="paper">
+            sadasd
 
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="js/libs/jquery-1.11.2.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>

@@ -28,7 +28,7 @@ var labnarMobile = function($) {
 		}
 	};
 	$('.menu-toggle').click(menu.toggle);
-	
+
 	// Finder
 	$('#finder').each(function() {
 		var $this = $(this),
@@ -48,36 +48,44 @@ var labnarMobile = function($) {
 	});
 
 	// Frame Navigation
-	$('#frame-navigation').each(function() {
-		var $this = $(this),
-			$a = $this.find('a'),
+	var frameNavigator = (function() {
+		var $a = $('#frame-navigation').find('a'),
 			current = 0,
 			currentId = $a.eq(0).attr('href'),
 			moving = false,
-			duration = 400;
-
-		$a.each(function(index) {
-			$(this).click(function(e) {
-				e.preventDefault();
-				if (index !== current && !moving) {
-					moving = true;
-					var direction = (index > current) ? 1 : -1;
-
-					$(currentId).css('left', (-100 * direction) + '%');
-					current = index;
-					currentId = $(this).attr('href');
-					$(currentId).css('left', '0%');
-
-					$a.removeClass('active').eq(index).addClass('active');
-					setTimeout(function() {
-						moving = false;
-					}, duration);
+			duration = 400,
+			fnav = {
+				set: function(id) {
+					if (id !== currentId && !moving) {
+						moving = true;
+						var next = -1;
+						$a.removeClass('active');
+						$a.each(function(index) {
+							if ($(this).attr('href') === id) {
+								$(this).addClass('active');
+								next = index;
+							}
+						});
+						if (next !== -1) {
+							var direction = (next > current) ? 1 : -1;
+							$(currentId).css('left', (-100 * direction) + '%');
+							currentId = id;
+							$(currentId).css('left', '0%');
+						}
+						setTimeout(function() {
+							moving = false;
+						}, duration);
+					}
 				}
-			});
+			};
+		$a.click(function(e) {
+			e.preventDefault();
+			fnav.set($(this).attr('href'));
 		});
+		return fnav;
+	})();
 
-	});
-
+	
 
 };
 
