@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Labnar Mobile</title>
+  <title>Detalle | Labnar Mobile</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -44,7 +44,7 @@
     </div>
     <div class="h-row">
       <nav id="frame-navigation">
-        <a href="#start-frame" class="active">Inicio</a>
+        <a href="#start-frame" class="active">Detalle</a>
         <a href="#categories-frame">Categorías</a>
         <a href="#my-account-frame">Mi cuenta</a>
         <a href="#my-cart-frame"><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
@@ -52,90 +52,122 @@
     </div>
   </header>
   <div id="shell">
-    <div class="frame" id="start-frame">
-      <div class="wrap">
-        <section class="products">
-          <header class="header-section">
-            <h2>Últimos libros</h2>
-            <a href="familias.html" class="btn btn-primary btn-small float-right">Ver más</a>
-          </header>
-          <ul class="product-list grid">
-            <li>
-              <div class="paper product-list-element">
-                <a href="detalle.html" class="product-list-viewDetail">
-                  <img src="img/product-thumbs/dispara-yo-ya-estoy-muerto.jpg" class="product-thumbnail">
-                  <div class="product-list-summary">
-                    <h3>Dispara, yo ya estoy muerto</h3>
-                    <h4>Julia Navarro</h4>
-                    <p class="price"><strike>19,90 &euro;</strike> 15,99 &euro;</p>
-                  </div>
-                  <img src="img/sale-product.png" class="sale-product">
-                </a>
-                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-              </div>
-            </li>
-            <li>
-              <div class="paper product-list-element">
-                <a href="detalle.html" class="product-list-viewDetail">
-                  <img src="img/product-thumbs/el-tiempo-entre-costuras.jpg" class="product-thumbnail">
-                  <div class="product-list-summary">
-                    <h3>El tiempo entre costuras</h3>
-                    <h4>María Dueñas</h4>
-                    <p class="price">19,99 &euro;</p>
-                  </div>
-                </a>
-                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-              </div>
-            </li>
-            <li>
-              <div class="paper product-list-element">
-                <a href="detalle.html" class="product-list-viewDetail">
-                  <img src="img/product-thumbs/el-francotirador-paciente.jpg" class="product-thumbnail">
-                  <div class="product-list-summary">
-                    <h3>El francotirador paciente</h3>
-                    <h4>Arturo Pérez-Reverte</h4>
-                    <p class="price"><strike>23,00 &euro;</strike> 21,99 &euro;</p>
-                  </div>
-                  <img src="img/sale-product.png" class="sale-product">
-                </a>
-                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="news">
-          <header class="header-section">
-            <h2>Noticias</h2>
-            <a href="" class="btn btn-primary btn-small float-right">Ver más</a>
-          </header>
-          <ul class="news-list">
-            <li>
-              <div class="paper news-list-element">
-                <a href="" class="clearfix">
-                  <div class="thumb">
-                    <img src="img/news-thumb/fuerza-naturaleza.jpg" />
-                  </div>
-                  <div class="text">
-                    <h3>Fuerzas de la Naturaleza: Las Cenizas del Destino (2014)</h3>
-                    <p>Presentación Oficial de la novela Fuerzas...</p>
-                  </div>
+    <div class="frame white" id="start-frame">
+      <div class="wrap x2">
+        <section class="detail">
+          <div class="clearfix detail-summary">
+            <figure>
+              <img src="img/product-thumbs/el-tiempo-entre-costuras.jpg" class="product-thumbnail">
+              <img src="img/sale-product.png" class="sale-product">
+            </figure>
+            <figcaption>
+              <h1>El tiempo entre costuras</h1>
+              <h3>María Dueñas</h3>
+              <div class="detail-ranking ranking">
+                <a href="#opinion-tab" class="tab-link">
+                  <i class="fa fa-user"></i> 24 |
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <i class="fa fa-star-o"></i>
                 </a>
               </div>
-            </li>
-            <li>
-              <div class="paper news-list-element">
-                <a href="" class="clearfix">
-                  <div class="thumb">
-                    <img src="img/news-thumb/fuerza-naturaleza.jpg" />
-                  </div>
-                  <div class="text">
-                    <h3>Fuerzas de la Naturaleza: Las Cenizas del Destino (2014)</h3>
-                    <p>Presentación Oficial de la novela Fuerzas...</p>
-                  </div>
-                </a>
-              </div>
-            </li>
-          </ul>
+              <p class="price">19,99 &euro;<strike>29,90 &euro;</strike></p>
+              <a href="javascript:void(0);" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Comprar</a>
+            </figcaption>
+          </div>
+          <div class="tabs">
+            <ul class="tab-list">
+              <li class="active">Sinopsis</li>
+              <li class="" id="videos-tab">Videos</li>
+              <li class="" id="opinion-tab">Opiniones</li>
+            </ul>
+            <ul class="tab-content">
+              <li class="active">
+                <p>Tordesillas 1502: Una joven es condenada a morir en la hoguera. Hoy, su legado aún perdura.</p>
+                <p>Julia era una chica solitaria e independiente, hasta que Gabriel se sentó junto a ella en el autobús de clase. Desde ese momento, su vida cambiará para siempre.</p>
+                <p>Será el día de su Exoltio, su dieciocho cumpleaños, cuando ella descubra que no es una adolescente cualquiera, que el destino la llama para convertirse en una Naturana. Su extraordinaria naturaleza la llevará a dominar los elementos a su antojo, a un laberinto de misterios y a una realidad que siempre le fue ocultada...</p>
+                <ul class="detail-info">
+                  <li><b>ISBN:</b> 9788416366002</li>
+                  <li><b>Editorial:</b> EdicionesLabnar</li>
+                  <li><b>Formato:</b> Cubierta blanda</li>
+                  <li><b>Lengua:</b> Castellano</li>
+                  <li><b>Páginas:</b> 360</li>
+                </ul>
+              </li>
+              <li class="videos">
+                <header>
+                  <h3><i class="fa fa-video-camera"></i> Vídeos</h3>
+                </header>
+                <iframe src="https://www.youtube.com/embed/5hClQ-OER3Y" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yPSOXr_qU_I" frameborder="0" allowfullscreen></iframe>
+              </li>
+              <li>
+                <header>
+                  <h3><i class="fa fa-user"></i> 24 opiniones</h3>
+                  <a href="#form-op" class="btn btn-link btn-small float-right"><i class="fa fa-pencil"></i> Opinar</a>
+                </header>
+                <ul class="opinions">
+                  <li>
+                    <img src="img/avatar.jpg">
+                    <div class="text">
+                      <p class="name">Norma Paredes</p>
+                      <div class="ranking">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                      </div>
+                      <p>Muy bueno. Me gustó mucho!</p>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img/avatar2.jpg">
+                    <div class="text">
+                      <p class="name">Carla Torres</p>
+                      <div class="ranking">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                      </div>
+                      <p>Mal escrito! Una basofia.</p>
+                    </div>
+                  </li>
+                </ul>
+                <form class="form-opinion" id="form-op">
+                  <h3>Tu opinión</h3>
+                  <p class="required-advert">* Campos requeridos</p>
+                  <fieldset>
+                    <label class="required">Comentario:</label>
+                    <textarea placeholder="Escribe un comentario"></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <label class="required">Puntuación:</label>
+                    <div class="ranking">
+                      <a href="">
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                      </a>
+                    </div>
+                  </fieldset>
+                  <fieldset class="legal">
+                    <input type="checkbox" id="legal-opinion">
+                    <label for="legal-opinion"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a href="legal.html">Aviso Legal</a>.
+                  </fieldset>
+                  <p class="align-center">
+                    <input type="submit" class="btn btn-secondary" value="Enviar Opinión" id="acceder" name="acceder" />
+                  </p>
+                </form>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
       <footer id="main-footer">

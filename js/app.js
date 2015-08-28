@@ -27,7 +27,7 @@ var labnarMobile = function($) {
 			}
 		}
 	};
-	$('.menu-toggle').click(menu.toggle);
+	$('.menu-toggle,#main-menu a').click(menu.toggle);
 
 	// Finder
 	$('#finder').each(function() {
@@ -84,8 +84,51 @@ var labnarMobile = function($) {
 		});
 		return fnav;
 	})();
+	$('.change-frame').click(function(e) {
+		e.preventDefault();
+		frameNavigator.set($(this).attr('href'));
+	});
 
-	
+	// Tabs
+	$('.tabs').each(function() {
+		var $list = $(this).find('.tab-list > li'),
+			$content = $(this).find('.tab-content > li');
+
+		$list.eq(0).addClass('active');
+		$content.eq(0).addClass('active');
+
+		$list.each(function(index) {
+			var $this = $(this);
+			$this.click(function() {
+				if (!$this.hasClass('active')) {
+					$list.removeClass('active');
+					$this.addClass('active');
+					$content.removeClass('active').eq(index).addClass('active');
+				}
+			});
+		});
+	});
+	$('a.tab-link').click(function() {
+		//e.preventDefault();
+		$($(this).attr('href')).click();
+	});
+
+	// Video resizing
+	(function($videos) {
+		var resizeVideo = function($v) {
+				var h = Math.round($v.width() * 2 / 3);
+				$v.height(h);
+			},
+			resizeAll = function() {
+				$videos.each(function() {
+					resizeVideo($(this));
+				});
+			};
+		resizeAll();
+		$(window).resize(resizeAll);
+		$('#videos-tab').click(resizeAll);
+	})($('.videos iframe'));
+
 
 };
 

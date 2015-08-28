@@ -28,9 +28,9 @@ body {
 }
 #main-header .brand {
   display: inline-block;
-  width: 102px;
+  width: 118px;
   vertical-align: top;
-  padding-top: 7px;
+  padding-top: 5px;
 }
 #main-header .brand img {
   width: 100%;
@@ -64,35 +64,33 @@ body {
   -webkit-transition: left .3s;
   transition: left .3s;
 }
-#main-menu .main-menu-header{
+#main-menu .main-menu-header {
   background-color: #453D35;
-  height: 80px;
+  height: 88px;
 }
 #main-header #main-menu .brand {
   padding-top: 15px;
-  width: 182px;
-  opacity: .7;
+  width: 223px;
 }
-#main-menu ul{
+#main-menu ul {
   font-size: 16px;
 }
-#main-menu ul li a{
+#main-menu ul li a {
   display: block;
   line-height: 48px;
   height: 48px;
   padding: 0 40px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   border-bottom: 1px solid #453D35;
   text-decoration: none;
 }
-#main-menu ul li a:hover{
-  background-color: rgba(255,255,255,.05);
+#main-menu ul li a:hover {
+  background-color: rgba(255, 255, 255, .05);
   text-decoration: none;
 }
-#main-menu ul li a .fa{
+#main-menu ul li a .fa {
   width: 25px;
 }
-
 #main-header #menu-backdrop {
   display: block;
   position: fixed;
@@ -172,6 +170,7 @@ body {
   -webkit-transition: all .2s;
   transition: all .2s;
   text-decoration: none;
+  position: relative;
 }
 #frame-navigation a:hover,
 #frame-navigation a:active {
@@ -182,6 +181,22 @@ body {
 #frame-navigation a.active {
   color: #FFF;
   border-bottom-color: #FFF;
+}
+#frame-navigation .num{
+  position: absolute;
+  top:8px;right: 0;
+  display: block;
+  font-size: 8px;
+  line-height:12px;
+  height:12px;
+  width:12px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #D36060;
+  color: #FFF;
+  font-weight: bold;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 #shell {
   position: fixed;
@@ -204,6 +219,9 @@ body {
   transition: left .3s;
   background-color: #f2f2f2;
 }
+#shell .frame.white {
+  background-color: #FFF;
+}
 #shell .frame:first-child {
   left: 0%;
 }
@@ -214,10 +232,11 @@ body {
   border-top: none;
 }
 .btn .fa {
-  margin-right: 10px;
+  margin-right: 0.5em;
 }
 
 /* CATEGORIES */
+
 #shell #categories-frame {
   background-color: #FFF;
 }
@@ -272,11 +291,14 @@ body {
   padding-left: 8px;
   padding-right: 8px;
 }
+.wrap.x2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .wrap.double {
   padding-left: 32px;
   padding-right: 32px;
 }
-
 .grid li {
   min-height: 1px;
   padding-left: 5px;
@@ -308,6 +330,12 @@ body {
   display: inline-block;
   font-size: 18px;
 }
+.header-section .btn {
+  margin-top: 4px;
+}
+.header-section .btn.btn-link {
+  padding-right: 0;
+}
 
 /* product-list ********************************/
 
@@ -329,7 +357,7 @@ body {
   overflow: hidden;
   background-color: #6E838F;
 }
-.product-list-element a .sale-product {
+.sale-product {
   position: absolute;
   top: -3px;
   left: -3px;
@@ -351,10 +379,13 @@ body {
 .product-list-element a .product-list-summary h4 {
   font-style: italic;
 }
-.product-list-element a .product-list-summary .price {
+.price {
   color: #5F839C;
   margin: 0;
   font-weight: 700;
+}
+.price strike {
+  color: #aaa;
 }
 .product-list-element .btn {
   width: 100%;
@@ -418,32 +449,165 @@ body {
 }
 
 /* form *******************************/
-form{
+
+form {
   padding: 16px;
 }
-form h3{
+form h3 {
   font-weight: 700;
   margin-bottom: 16px;
 }
-
-form .required-advert{
+form .required-advert {
   font-size: 10px;
   color: #999;
 }
-form p.forgot-pass{
+form p.forgot-pass {
   margin: 0;
 }
-form p.forgot-pass .btn{
+form p.forgot-pass .btn {
   font-weight: normal;
 }
 
+/* CART ********************/
 
+.empty-cart {
+  padding: 16px;
+}
+.th-description {
+  min-width: 40%
+}
+table th.t-tool,
+table td.t-tool {
+  min-width: 0;
+  padding-right: 0;
+}
+a.quit-product {
+  color: #D00;
+}
+tr.tfoot-total {
+  background-color: #554b41;
+  color: #FFF;
+}
+table,
+tr.tfoot-total,
+table.cart-options tr:last-child {
+  border-bottom: none;
+}
+.cart-options .fa {
+  font-size: 18px;
+}
+.cart-options-td-icon {
+  text-align: center;
+}
+table.cart-options th,
+table.cart-options td {
+  min-width: 0;
+}
+table.cart-options td.td-select {
+  min-width: 70%;
+}
 
+/* DETAIL *****************************************/
 
-
-
-
-
+.detail {}
+.detail-summary {
+  padding: 32px 0 16px;
+}
+.detail-summary figure {
+  float: left;
+  width: 40%;
+  max-width: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.detail-summary figcaption {
+  float: left;
+  width: 60%;
+  padding-left: 16px
+}
+.detail-summary figcaption h1 {
+  font-size: 18px;
+  line-height: 1.2em
+}
+.detail-summary figcaption h3 {
+  font-style: italic;
+  font-size: 11px;
+  color: #777
+}
+.detail-summary figcaption .price {
+  padding: 16px 0;
+  font-size: 14px;
+}
+.detail-summary figcaption .price strike {
+  font-size: 11px;
+  margin-left: 1em;
+}
+.detail-ranking {
+  font-size: 11px;
+}
+.ranking a {
+  text-decoration: none;
+  line-height: 24px;
+  display: inline-block;
+}
+.ranking,
+.ranking a {
+  color: #ae9a86;
+}
+.detail-info {
+  font-size: 9px;
+  line-height: 1.1em;
+  color: #777;
+  border-top: 1px solid #DDD;
+  padding-top: 8px;
+}
+.tabs header h3 {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+  margin-bottom: 8px;
+}
+.opinions li {
+  padding: 16px 0;
+  border-bottom: 1px solid #DDD;
+}
+.opinions li img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  float: left;
+}
+.opinions li .text {
+  margin-left: 64px;
+  min-height: 48px;
+}
+.opinions li .text p {
+  margin: 0
+}
+.opinions li .text .name {
+  font-weight: 700
+}
+.form-opinion {
+  padding: 16px 0;
+  border-bottom: 1px solid #DDD;
+}
+.form-opinion .ranking {
+  display: inline-block;
+  margin-left: 8px;
+}
+.form-opinion .legal {
+  font-size: 11px;
+  line-height: 1.1em;
+}
+.form-opinion .legal label {
+  padding: 0;
+}
+.videos iframe{
+  width:100% !important;
+  margin-bottom: 16px;
+}
 
 /* MEDIA QUERIES ************************************************************************************************************/
 
@@ -471,7 +635,7 @@ form p.forgot-pass .btn{
     width: 50%;
   }
   .product-list-element a.product-list-viewDetail {
-    height: 382px;
+    height: 323px;
   }
 }
 
