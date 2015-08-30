@@ -43,16 +43,16 @@
       </div>
     </div>
     <div class="h-row">
-      <nav id="frame-navigation">
-        <a href="#start-frame" class="active">Inicio</a>
-        <a href="#categories-frame">Categorías</a>
-        <a href="#my-account-frame">Mi cuenta</a>
-        <a href="#my-cart-frame"><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
+      <nav class="tabber main-navigation" for="main-article">
+        <a href="" class="active" id="start-link">Inicio</a>
+        <a href="">Categorías</a>
+        <a href="">Mi cuenta</a>
+        <a href=""><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
       </nav>
     </div>
   </header>
-  <div id="shell">
-    <div class="frame" id="start-frame">
+  <article id="main-article" class="tabber-content fixed">
+    <div class="frame">
       <div class="wrap">
         <section class="products">
           <header class="header-section">
@@ -144,7 +144,7 @@
         </div>
       </footer>
     </div>
-    <div class="frame" id="categories-frame">
+    <div class="frame white">
       <menu class="menudinamico">
         <ul>
           <li>
@@ -184,7 +184,7 @@
         </ul>
       </menu>
     </div>
-    <div class="frame" id="my-account-frame">
+    <div class="frame">
       <div class="wrap">
         <section class="my-account">
           <header class="header-section">
@@ -211,7 +211,7 @@
         </section>
       </div>
     </div>
-    <div class="frame" id="my-cart-frame">
+    <div class="frame">
       <div class="wrap">
         <section class="my-account">
           <header class="header-section">
@@ -220,7 +220,7 @@
           </header>
           <!-- Mostrar cuando el carrito esté vacío
           <div class="paper empty-cart">
-           Tu carrito está vacío. Puedes seleccionar los productos que te interesen de <a href="#start-frame" class="change-frame">nuestra web</a> y añadirlos a tu carrito facilmente.
+           Tu carrito está vacío. Puedes seleccionar los productos que te interesen de <a href="#start-link" class="click-link">nuestra web</a> y añadirlos a tu carrito facilmente.
           </div>
         -->
           <div class="paper">
@@ -322,14 +322,15 @@
             </table>
           </div>
           <div class="align-right">
-            <a href="#start-frame" class="change-frame btn btn-link btn-small"><i class="fa fa-shopping-cart"></i>Seguir comprando</a>
+            <a href="#start-link" class="click-link btn btn-link btn-small"><i class="fa fa-shopping-cart"></i>Seguir comprando</a>
             <a href="checkout.html" class="btn btn-primary"><i class="fa fa-arrow-right"></i>Tramitar pedido</a>
           </div>
         </section>
       </div>
     </div>
-    <script src="js/libs/jquery-1.11.2.min.js"></script>
-    <script src="js/app.js"></script>
+  </article>
+  <script src="js/libs/jquery-1.11.2.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

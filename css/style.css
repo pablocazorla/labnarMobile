@@ -110,7 +110,6 @@ body {
 #main-header.menu-shown #main-menu {
   left: 0;
 }
-.brand {}
 #finder {
   position: absolute;
   top: 0;
@@ -149,87 +148,120 @@ body {
   margin-left: 40px;
   margin-right: 8px;
 }
-#frame-navigation {
+.white {
+  background: #FFF;
+}
+
+/* TABBER ***************/
+
+.tabber {
   display: block;
+  height: 40px;
+  font-size: 0px;
+  border-bottom: 1px solid #DDD;
+}
+.tabber a {
   position: relative;
-  overflow: hidden;
-  text-transform: uppercase;
-  font-size: 13px;
-  padding: 0 8px;
-}
-#frame-navigation .fa {
-  font-size: 15px;
-}
-#frame-navigation a {
   display: inline-block;
+  padding: 0 1em;
+  border-bottom: 3px solid transparent;
   height: 40px;
   line-height: 40px;
-  padding: 0 8px;
-  color: rgba(255, 255, 255, .5);
-  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-decoration: none;
+  color: #999;
   -webkit-transition: all .2s;
+  -ms-transition: all .2s;
   transition: all .2s;
-  text-decoration: none;
+}
+.tabber a:hover {
+  background-color: rgba(0, 0, 0, .05);
+  color: #222;
+}
+.tabber a.active {
+  color: #222;
+  border-bottom-color: #007a99;
+}
+
+/* tabber-content */
+
+.tabber-content {
   position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  width: 100%;
+  -webkit-transition: height .2s;
+  -ms-transition: height .2s;
+  transition: height .2s;
 }
-#frame-navigation a:hover,
-#frame-navigation a:active {
-  text-decoration: none;
+.tabber-content > .frame {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.tabber-content > .frame:first-child {
+  left: 0%;
+}
+.tabber-content .frame.anim {
+  -webkit-transition: left .3s;
+  -ms-transition: left .3s;
+  transition: left .3s;
+}
+.tabber-content.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 0;
+  width: auto;
+}
+.tabber-content.fixed > .frame {
+  bottom: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.tabber + .tabber-content {
+  margin-top: 8px;
+}
+
+/* TABBER MAIN NAVIGATION ***************************************/
+
+.tabber.main-navigation {
+  border-bottom-color: transparent;
+}
+#main-header .tabber.main-navigation a {
   color: rgba(255, 255, 255, .7);
-  background-color: rgba(255, 255, 255, .1);
 }
-#frame-navigation a.active {
+#main-header .tabber.main-navigation a:hover {
+  color: #FFF;
+}
+#main-header .tabber.main-navigation a.active {
   color: #FFF;
   border-bottom-color: #FFF;
 }
-#frame-navigation .num{
+.main-navigation .num {
   position: absolute;
-  top:8px;right: 0;
+  top: 8px;
+  right: 0;
   display: block;
   font-size: 8px;
-  line-height:12px;
-  height:12px;
-  width:12px;
+  line-height: 12px;
+  height: 12px;
+  width: 12px;
   text-align: center;
   overflow: hidden;
   border-radius: 50%;
   background-color: #D36060;
   color: #FFF;
   font-weight: bold;
-  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
-#shell {
-  position: fixed;
-  z-index: 99;
+#main-article {
   top: 80px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-#shell .frame {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  bottom: 0;
-  width: 100%;
-  overflow: auto;
-  overflow-x: hidden;
-  -webkit-transition: left .3s;
-  transition: left .3s;
-  background-color: #f2f2f2;
-}
-#shell .frame.white {
-  background-color: #FFF;
-}
-#shell .frame:first-child {
-  left: 0%;
-}
-.frame section {
-  border-top: 1px solid #DDD;
-}
-.frame section:first-child {
-  border-top: none;
 }
 .btn .fa {
   margin-right: 0.5em;
@@ -440,8 +472,9 @@ body {
   background-color: #007a99;
   box-shadow: 0 -1px 3px rgba(0, 0, 0, .3);
   text-align: center;
-  font-size: 11px;
+  font-size: 10px;
   margin-top: 16px;
+  overflow: hidden;
 }
 #main-footer,
 #main-footer a {
@@ -561,7 +594,7 @@ table.cart-options td.td-select {
   border-top: 1px solid #DDD;
   padding-top: 8px;
 }
-.tabs header h3 {
+.tabber-content header h3 {
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
@@ -604,8 +637,8 @@ table.cart-options td.td-select {
 .form-opinion .legal label {
   padding: 0;
 }
-.videos iframe{
-  width:100% !important;
+.videos iframe {
+  width: 100% !important;
   margin-bottom: 16px;
 }
 

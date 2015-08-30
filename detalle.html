@@ -43,16 +43,16 @@
       </div>
     </div>
     <div class="h-row">
-      <nav id="frame-navigation">
-        <a href="#start-frame" class="active">Detalle</a>
-        <a href="#categories-frame">Categorías</a>
-        <a href="#my-account-frame">Mi cuenta</a>
-        <a href="#my-cart-frame"><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
+      <nav class="tabber main-navigation" for="main-article">
+        <a href="" class="active" id="start-link">Detalle</a>
+        <a href="">Categorías</a>
+        <a href="">Mi cuenta</a>
+        <a href=""><i class="fa fa-shopping-cart"></i><span class="num">2</span></a>
       </nav>
     </div>
   </header>
-  <div id="shell">
-    <div class="frame white" id="start-frame">
+  <article id="main-article" class="tabber-content fixed">
+    <div class="frame white">
       <div class="wrap x2">
         <section class="detail">
           <div class="clearfix detail-summary">
@@ -64,7 +64,7 @@
               <h1>El tiempo entre costuras</h1>
               <h3>María Dueñas</h3>
               <div class="detail-ranking ranking">
-                <a href="#opinion-tab" class="tab-link">
+                <a href="#opinion-link" class="click-link">
                   <i class="fa fa-user"></i> 24 |
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -77,96 +77,94 @@
               <a href="javascript:void(0);" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Comprar</a>
             </figcaption>
           </div>
-          <div class="tabs">
-            <ul class="tab-list">
-              <li class="active">Sinopsis</li>
-              <li class="" id="videos-tab">Videos</li>
-              <li class="" id="opinion-tab">Opiniones</li>
-            </ul>
-            <ul class="tab-content">
-              <li class="active">
-                <p>Tordesillas 1502: Una joven es condenada a morir en la hoguera. Hoy, su legado aún perdura.</p>
-                <p>Julia era una chica solitaria e independiente, hasta que Gabriel se sentó junto a ella en el autobús de clase. Desde ese momento, su vida cambiará para siempre.</p>
-                <p>Será el día de su Exoltio, su dieciocho cumpleaños, cuando ella descubra que no es una adolescente cualquiera, que el destino la llama para convertirse en una Naturana. Su extraordinaria naturaleza la llevará a dominar los elementos a su antojo, a un laberinto de misterios y a una realidad que siempre le fue ocultada...</p>
-                <ul class="detail-info">
-                  <li><b>ISBN:</b> 9788416366002</li>
-                  <li><b>Editorial:</b> EdicionesLabnar</li>
-                  <li><b>Formato:</b> Cubierta blanda</li>
-                  <li><b>Lengua:</b> Castellano</li>
-                  <li><b>Páginas:</b> 360</li>
-                </ul>
-              </li>
-              <li class="videos">
-                <header>
-                  <h3><i class="fa fa-video-camera"></i> Vídeos</h3>
-                </header>
-                <iframe src="https://www.youtube.com/embed/5hClQ-OER3Y" frameborder="0" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yPSOXr_qU_I" frameborder="0" allowfullscreen></iframe>
-              </li>
-              <li>
-                <header>
-                  <h3><i class="fa fa-user"></i> 24 opiniones</h3>
-                  <a href="#form-op" class="btn btn-link btn-small float-right"><i class="fa fa-pencil"></i> Opinar</a>
-                </header>
-                <ul class="opinions">
-                  <li>
-                    <img src="img/avatar.jpg">
-                    <div class="text">
-                      <p class="name">Norma Paredes</p>
-                      <div class="ranking">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                      </div>
-                      <p>Muy bueno. Me gustó mucho!</p>
-                    </div>
-                  </li>
-                  <li>
-                    <img src="img/avatar2.jpg">
-                    <div class="text">
-                      <p class="name">Carla Torres</p>
-                      <div class="ranking">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                      </div>
-                      <p>Mal escrito! Una basofia.</p>
-                    </div>
-                  </li>
-                </ul>
-                <form class="form-opinion" id="form-op">
-                  <h3>Tu opinión</h3>
-                  <p class="required-advert">* Campos requeridos</p>
-                  <fieldset>
-                    <label class="required">Comentario:</label>
-                    <textarea placeholder="Escribe un comentario"></textarea>
-                  </fieldset>
-                  <fieldset>
-                    <label class="required">Puntuación:</label>
+          <nav class="tabber" for="product-tab">
+            <a href="" class="active">Sinopsis</a>
+            <a href="">Videos</a>
+            <a href="" id="opinion-link">Opiniones</a>
+          </nav>
+          <div id="product-tab" class="tabber-content">
+            <div class="frame">
+              <p>Tordesillas 1502: Una joven es condenada a morir en la hoguera. Hoy, su legado aún perdura.</p>
+              <p>Julia era una chica solitaria e independiente, hasta que Gabriel se sentó junto a ella en el autobús de clase. Desde ese momento, su vida cambiará para siempre.</p>
+              <p>Será el día de su Exoltio, su dieciocho cumpleaños, cuando ella descubra que no es una adolescente cualquiera, que el destino la llama para convertirse en una Naturana. Su extraordinaria naturaleza la llevará a dominar los elementos a su antojo, a un laberinto de misterios y a una realidad que siempre le fue ocultada...</p>
+              <ul class="detail-info">
+                <li><b>ISBN:</b> 9788416366002</li>
+                <li><b>Editorial:</b> EdicionesLabnar</li>
+                <li><b>Formato:</b> Cubierta blanda</li>
+                <li><b>Lengua:</b> Castellano</li>
+                <li><b>Páginas:</b> 360</li>
+              </ul>
+            </div>
+            <div class="frame videos">
+              <header>
+                <h3><i class="fa fa-video-camera"></i> Vídeos</h3>
+              </header>
+              <iframe src="https://www.youtube.com/embed/5hClQ-OER3Y" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/yPSOXr_qU_I" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="frame">
+              <header>
+                <h3><i class="fa fa-user"></i> 24 opiniones</h3>
+                <a href="#form-op" class="btn btn-link btn-small float-right"><i class="fa fa-pencil"></i> Opinar</a>
+              </header>
+              <ul class="opinions">
+                <li>
+                  <img src="img/avatar.jpg">
+                  <div class="text">
+                    <p class="name">Norma Paredes</p>
                     <div class="ranking">
-                      <a href="">
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                      </a>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
                     </div>
-                  </fieldset>
-                  <fieldset class="legal">
-                    <input type="checkbox" id="legal-opinion">
-                    <label for="legal-opinion"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a href="legal.html">Aviso Legal</a>.
-                  </fieldset>
-                  <p class="align-center">
-                    <input type="submit" class="btn btn-secondary" value="Enviar Opinión" id="acceder" name="acceder" />
-                  </p>
-                </form>
-              </li>
-            </ul>
+                    <p>Muy bueno. Me gustó mucho!</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/avatar2.jpg">
+                  <div class="text">
+                    <p class="name">Carla Torres</p>
+                    <div class="ranking">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Mal escrito! Una basofia.</p>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-opinion" id="form-op">
+                <h3>Tu opinión</h3>
+                <p class="required-advert">* Campos requeridos</p>
+                <fieldset>
+                  <label class="required">Comentario:</label>
+                  <textarea placeholder="Escribe un comentario"></textarea>
+                </fieldset>
+                <fieldset>
+                  <label class="required">Puntuación:</label>
+                  <div class="ranking">
+                    <a href="">
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </a>
+                  </div>
+                </fieldset>
+                <fieldset class="legal">
+                  <input type="checkbox" id="legal-opinion">
+                  <label for="legal-opinion"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a href="legal.html">Aviso Legal</a>.
+                </fieldset>
+                <p class="align-center">
+                  <input type="submit" class="btn btn-secondary" value="Enviar Opinión" id="acceder" name="acceder" />
+                </p>
+              </form>
+            </div>
           </div>
         </section>
       </div>
@@ -176,7 +174,7 @@
         </div>
       </footer>
     </div>
-    <div class="frame" id="categories-frame">
+    <div class="frame white">
       <menu class="menudinamico">
         <ul>
           <li>
@@ -216,7 +214,7 @@
         </ul>
       </menu>
     </div>
-    <div class="frame" id="my-account-frame">
+    <div class="frame">
       <div class="wrap">
         <section class="my-account">
           <header class="header-section">
@@ -243,7 +241,7 @@
         </section>
       </div>
     </div>
-    <div class="frame" id="my-cart-frame">
+    <div class="frame">
       <div class="wrap">
         <section class="my-account">
           <header class="header-section">
@@ -252,7 +250,7 @@
           </header>
           <!-- Mostrar cuando el carrito esté vacío
           <div class="paper empty-cart">
-           Tu carrito está vacío. Puedes seleccionar los productos que te interesen de <a href="#start-frame" class="change-frame">nuestra web</a> y añadirlos a tu carrito facilmente.
+           Tu carrito está vacío. Puedes seleccionar los productos que te interesen de <a href="#start-link" class="click-link">nuestra web</a> y añadirlos a tu carrito facilmente.
           </div>
         -->
           <div class="paper">
@@ -354,14 +352,15 @@
             </table>
           </div>
           <div class="align-right">
-            <a href="#start-frame" class="change-frame btn btn-link btn-small"><i class="fa fa-shopping-cart"></i>Seguir comprando</a>
+            <a href="#start-link" class="click-link btn btn-link btn-small"><i class="fa fa-shopping-cart"></i>Seguir comprando</a>
             <a href="checkout.html" class="btn btn-primary"><i class="fa fa-arrow-right"></i>Tramitar pedido</a>
           </div>
         </section>
       </div>
     </div>
-    <script src="js/libs/jquery-1.11.2.min.js"></script>
-    <script src="js/app.js"></script>
+  </article>
+  <script src="js/libs/jquery-1.11.2.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
