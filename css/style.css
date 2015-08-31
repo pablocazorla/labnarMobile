@@ -28,9 +28,9 @@ body {
 }
 #main-header .brand {
   display: inline-block;
-  width: 118px;
+  padding-top: 8px;
   vertical-align: top;
-  padding-top: 5px;
+  width: 224px;
 }
 #main-header .brand img {
   width: 100%;
@@ -66,11 +66,7 @@ body {
 }
 #main-menu .main-menu-header {
   background-color: #453D35;
-  height: 88px;
-}
-#main-header #main-menu .brand {
-  padding-top: 15px;
-  width: 223px;
+  height: 40px;
 }
 #main-menu ul {
   font-size: 16px;
@@ -569,10 +565,10 @@ table.cart-options td.td-select {
 }
 .detail-summary figcaption .price {
   padding: 16px 0;
-  font-size: 14px;
+  font-size: 20px;
 }
 .detail-summary figcaption .price strike {
-  font-size: 11px;
+  font-size: 13px;
   margin-left: 1em;
 }
 .detail-ranking {

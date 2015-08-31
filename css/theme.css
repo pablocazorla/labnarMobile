@@ -522,12 +522,14 @@ blockquote *:last-child {
 a,
 .a {
   color: #007a99;
+  outline: none;
 }
 a:hover,
 .a:hover,
 a:focus,
 .a:focus {
   color: #008eb3;
+  outline: none;
 }
 a.disabled,
 .a.disabled {
@@ -3388,4 +3390,38 @@ img.responsive {
 img.responsive.unlimited {
   width: 100% !important;
   max-width: auto;
+}
+
+/* PAGINATION ******************************/
+
+.pagination {
+  font-size: 11px;
+  line-height: 30px;
+  text-align: center;
+}
+.pagination .pag {
+  border: 1px solid #CCC;
+  background-color: #FFF;
+}
+.pagination a,
+.pagination span {
+  border-radius: 2px;
+  color: #666;
+  display: inline-block;
+  height: 30px;
+  min-width: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease 0s;
+}
+.pagination a:hover {
+  background-color: #CCC;
+  color: #FFF;
+}
+.pagination .pag.current {
+  cursor: default;
+  background-color: #ae9a86;
+  border-color: #ae9a86;
+  color: #FFF
 }
