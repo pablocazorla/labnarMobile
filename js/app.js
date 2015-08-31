@@ -116,6 +116,52 @@ var labnarMobile = function($) {
 		$(window).resize(resizeAll);
 		$('#videos-tab').click(resizeAll);
 	})($('.videos iframe'));
+
+	// Modal
+
+	/*
+
+	<div class="modal">
+    <div class="modal-body">
+      <div class="modal-close"><i class="fa fa-times"></i></div>
+      <div class="modal-scroller"></div>
+    </div>
+  </div>
+	*/
+	var Modal = (function() {
+
+		var $modal = $('<div class="modal"></div>').appendTo('body'),
+			$modalBody = $('<div class="modal-body"></div>').appendTo($modal),
+			$modalClose = $('<div class="modal-close"><i class="fa fa-times"></i></div>').appendTo($modalBody),
+			$modalScroller = $('<div class="modal-scroller"></div>').appendTo($modalBody),
+			m = {
+				content: function(txt) {
+					$modalScroller.html(txt);
+					return m;
+				},
+				show: function() {
+					$modal.addClass('show');
+					return m;
+				},
+				hide: function() {
+					$modal.removeClass('show');
+					return m;
+				}
+			};
+		$modalClose.click(m.hide);
+
+		return m;
+	})();
+	$('.show-modal').click(function(e){
+		e.preventDefault();
+		Modal.show();
+	});
+
+	// AVISO LEGAL
+	Modal.content('<iframe src="legal.html"/>');
+
+
+
 };
 
 jQuery('document').ready(function() {

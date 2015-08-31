@@ -3425,3 +3425,58 @@ img.responsive.unlimited {
   border-color: #ae9a86;
   color: #FFF
 }
+/* MODAL */
+.modal{
+  position: fixed;z-index: 1200;
+  left:0;right:0;bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  -webkit-transition:opacity .3s;
+  -ms-transition:opacity .3s;
+  transition:opacity .3s;
+}
+.modal.show{
+  top:0;height: auto;opacity: 1;
+}
+.modal-body{
+  position: absolute;
+  top:16px;left:16px;right:16px;bottom: 16px;
+  background-color: #FFF;
+  box-shadow: 0 1px 6px rgba(0,0,0,.4);
+  border-radius: 2px
+}
+.modal-close{
+  position: absolute;
+  top:0;right:0;
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #666
+}
+.modal-scroller{
+  position: absolute;
+  top:16px;left:16px;right:16px;bottom: 16px;
+  overflow: hidden;
+  overflow-y:auto; 
+}
+.modal-scroller iframe{
+  border: none;
+  margin: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+

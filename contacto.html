@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Labnar Mobile</title>
+  <title>Contacto | Labnar Mobile</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -54,88 +54,43 @@
   <article id="main-article" class="tabber-content fixed">
     <div class="frame">
       <div class="wrap">
-        <section class="products">
-          <header class="header-section">
-            <h2>Últimos libros</h2>
-            <a href="familias.html" class="btn btn-primary btn-small float-right">Ver más</a>
-          </header>
-          <ul class="product-list grid">
-            <li>
-              <div class="paper product-list-element">
-                <a href="detalle.html" class="product-list-viewDetail">
-                  <img src="img/product-thumbs/dispara-yo-ya-estoy-muerto.jpg" class="product-thumbnail">
-                  <div class="product-list-summary">
-                    <h3>Dispara, yo ya estoy muerto</h3>
-                    <h4>Julia Navarro</h4>
-                    <p class="price"><strike>19,90 &euro;</strike> 15,99 &euro;</p>
-                  </div>
-                  <img src="img/sale-product.png" class="sale-product">
-                </a>
-                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-              </div>
-            </li>
-            <li>
-              <div class="paper product-list-element">
-                <a href="detalle.html" class="product-list-viewDetail">
-                  <img src="img/product-thumbs/el-tiempo-entre-costuras.jpg" class="product-thumbnail">
-                  <div class="product-list-summary">
-                    <h3>El tiempo entre costuras</h3>
-                    <h4>María Dueñas</h4>
-                    <p class="price">19,99 &euro;</p>
-                  </div>
-                </a>
-                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-              </div>
-            </li>
-            <li>
-              <div class="paper product-list-element">
-                <a href="detalle.html" class="product-list-viewDetail">
-                  <img src="img/product-thumbs/el-francotirador-paciente.jpg" class="product-thumbnail">
-                  <div class="product-list-summary">
-                    <h3>El francotirador paciente</h3>
-                    <h4>Arturo Pérez-Reverte</h4>
-                    <p class="price"><strike>23,00 &euro;</strike> 21,99 &euro;</p>
-                  </div>
-                  <img src="img/sale-product.png" class="sale-product">
-                </a>
-                <a href="javascript:void(0);" class="btn btn-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-              </div>
-            </li>
-          </ul>
-        </section>
         <section class="news">
           <header class="header-section">
-            <h2>Noticias</h2>
-            <a href="" class="btn btn-primary btn-small float-right">Ver más</a>
+            <h2>Contacta con nosotros</h2>
           </header>
-          <ul class="news-list">
-            <li>
-              <div class="paper news-list-element">
-                <a href="" class="clearfix">
-                  <div class="thumb">
-                    <img src="img/news-thumb/fuerza-naturaleza.jpg" />
-                  </div>
-                  <div class="text">
-                    <h3>Fuerzas de la Naturaleza: Las Cenizas del Destino (2014)</h3>
-                    <p>Presentación Oficial de la novela Fuerzas...</p>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="paper news-list-element">
-                <a href="" class="clearfix">
-                  <div class="thumb">
-                    <img src="img/news-thumb/fuerza-naturaleza.jpg" />
-                  </div>
-                  <div class="text">
-                    <h3>Fuerzas de la Naturaleza: Las Cenizas del Destino (2014)</h3>
-                    <p>Presentación Oficial de la novela Fuerzas...</p>
-                  </div>
-                </a>
-              </div>
-            </li>
-          </ul>
+          <form action="" class="paper" method="post">
+            <h3>Formulario de consultas</h3>
+            <p>Ponte en contacto con nosotros si tienes alguna duda o llámanos al número de teléfono que aparece en el pie de esta misma página.</p>
+            <p class="required-advert">* Campos requeridos</p>
+            <input type="hidden" name="pagina_origen" value="http://www.claveweb.info/labnar">
+            <fieldset>
+              <label class="required" for="name-c">Nombre y Apellidos:</label>
+              <input type="text" placeholder="Su nombre" name="name-c" id="name-c" value="">
+            </fieldset>
+            <fieldset>
+              <label for="company-c">Empresa:</label>
+              <input type="text" placeholder="Su empresa" name="company-c" id="company-c" value="">
+            </fieldset>
+            <fieldset>
+              <label class="required" for="email-c">Email:</label>
+              <input type="email" placeholder="nombre@ejemplo.com" name="email-c" id="email-c" value="">
+            </fieldset>
+            <fieldset>
+              <label class="required" for="phone-c">Teléfono:</label>
+              <input type="tel" placeholder="000 000 0000" name="phone-c" id="phone-c" value="">
+            </fieldset>
+            <fieldset>
+              <label class="required">Consulta:</label>
+              <textarea placeholder="Escriba una consulta"></textarea>
+            </fieldset>
+            <fieldset class="legal">
+              <input type="checkbox" id="legal-opinion-c">
+              <label for="legal-opinion-c"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a href="" class="show-modal">Aviso Legal</a>.
+            </fieldset>
+            <p class="align-center">
+              <button class="btn btn-secondary btn-big"> <i class="fa fa-paper-plane"></i>Enviar</button>
+            </p>
+          </form>
         </section>
       </div>
       <footer id="main-footer">
@@ -328,7 +283,7 @@
         </section>
       </div>
     </div>
-  </article>
+  </article>  
   <script src="js/libs/jquery-1.11.2.min.js"></script>
   <script src="js/app.js"></script>
 </body>

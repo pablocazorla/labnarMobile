@@ -12,6 +12,11 @@ body {
   overflow: hidden;
   min-width: 320px;
 }
+html.for-iframe,
+html.for-iframe body {
+  min-width: 0;
+  overflow-y: auto;
+}
 #main-header {
   position: fixed;
   z-index: 100;
@@ -268,6 +273,9 @@ body {
 #shell #categories-frame {
   background-color: #FFF;
 }
+.menudinamico {
+  padding-bottom: 16px;
+}
 .menudinamico a {
   display: block;
   padding: 0 16px;
@@ -346,6 +354,12 @@ body {
 .paper {
   background-color: #FFF;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+.paper.padded {
+  padding: 16px;
+}
+.paper.padded p:last-child {
+  margin-bottom: 0;
 }
 
 /* header-section **********************************/
@@ -626,7 +640,7 @@ table.cart-options td.td-select {
   display: inline-block;
   margin-left: 8px;
 }
-.form-opinion .legal {
+fieldset.legal {
   font-size: 11px;
   line-height: 1.1em;
 }
@@ -636,6 +650,28 @@ table.cart-options td.td-select {
 .videos iframe {
   width: 100% !important;
   margin-bottom: 16px;
+}
+
+/* Legal ********************/
+
+.legal-content h1 {
+  font-size: 20px;
+  line-height: 1.3em;
+  margin-bottom: 8px;
+}
+.legal-content h2 {
+  font-size: 16px;
+  line-height: 1.3em;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #CCC;
+  color: #999;
+}
+
+/* my-cart *********/
+
+.my-cart {
+  padding-bottom: 32px;
 }
 
 /* MEDIA QUERIES ************************************************************************************************************/
