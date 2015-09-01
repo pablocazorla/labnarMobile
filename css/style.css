@@ -370,7 +370,9 @@ html.for-iframe body {
 }
 .header-section h2 {
   display: inline-block;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #624931;
 }
 .header-section .btn {
   margin-top: 4px;
@@ -437,13 +439,15 @@ html.for-iframe body {
 }
 
 /* news-list ***************/
-
-.news-list-element {
+.news-list{
   margin-bottom: 16px;
+}
+.news-list-element {
+  border-bottom: 1px solid #e2e2e2;
 }
 .news-list-element a {
   display: block;
-  padding: 8px;
+  padding: 16px 8px;
   color: #777;
   text-decoration: none
 }
@@ -451,9 +455,8 @@ html.for-iframe body {
   text-decoration: none
 }
 .news-list-element .thumb {
-  background-color: #DDD;
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   float: left;
 }
@@ -463,12 +466,12 @@ html.for-iframe body {
   display: block;
 }
 .news-list-element .text {
-  margin-left: 80px;
+  margin-left: 60px;
   font-size: 11px;
 }
 .news-list-element .text h3 {
-  font-size: 13px;
-  color: #222;
+  font-size: 12px;
+  color: #007a99;
 }
 .news-list-element .text p {
   margin: 0;
@@ -598,11 +601,17 @@ table.cart-options td.td-select {
   color: #ae9a86;
 }
 .detail-info {
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.1em;
-  color: #777;
   border-top: 1px solid #DDD;
   padding-top: 8px;
+  float: left;
+  width: 60%;
+  padding-right: 10px;
+  max-width: 186px;
+}
+.detail-info.sec{
+ width: 40%;
 }
 .tabber-content header h3 {
   display: inline-block;

@@ -92,6 +92,7 @@ var labnarMobile = function($) {
 				change(i);
 			});
 		});
+		$(window).resize(setPositions);
 	});
 
 	// Click links
