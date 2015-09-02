@@ -64,14 +64,19 @@ html.for-iframe body {
   left: -370px;
   width: 92%;
   max-width: 360px;
-  background-color: #554b41;
+  background-color: #453D35;
   box-shadow: 1px 0 3px rgba(0, 0, 0, .3);
   -webkit-transition: left .3s;
   transition: left .3s;
 }
 #main-menu .main-menu-header {
-  background-color: #453D35;
   height: 40px;
+}
+#main-menu .main-menu-nav{
+  position: absolute;
+  top: 40px;bottom: 0;left: 0;right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 #main-menu ul {
   font-size: 16px;
@@ -84,6 +89,9 @@ html.for-iframe body {
   color: rgba(255, 255, 255, .8);
   border-bottom: 1px solid #453D35;
   text-decoration: none;
+background-color: #554b41;
+
+
 }
 #main-menu ul li a:hover {
   background-color: rgba(255, 255, 255, .05);
@@ -92,6 +100,58 @@ html.for-iframe body {
 #main-menu ul li a .fa {
   width: 25px;
 }
+.map-container{
+  padding: 16px 36px;
+  background-color: #3C352E;
+}
+#main-menu ul.map{
+  float:left;
+  width: 50%;
+  font-size: 11px;
+  text-align: center;
+}
+#main-menu ul.map li a {
+    border-bottom: none;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    height: auto;
+    line-height: 12px;
+    padding: 6px 0;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#main-menu .map-social{
+  text-align: center;
+  padding: 16px;
+}
+#main-menu .map-social a{
+  text-decoration: none;
+}
+#main-menu .map-social .soc-ic{
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1em;
+  padding: 0 8px;
+  color: rgba(255,255,255,.8);
+  margin-bottom: 8px
+}
+#main-menu .map-social .soc-email{
+  display: block;
+  font-size: 11px;
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 #main-header #menu-backdrop {
   display: block;
   position: fixed;
@@ -361,6 +421,9 @@ html.for-iframe body {
 .paper.padded p:last-child {
   margin-bottom: 0;
 }
+.paper.the-content{
+  margin-bottom: 16px;
+}
 
 /* header-section **********************************/
 
@@ -439,7 +502,8 @@ html.for-iframe body {
 }
 
 /* news-list ***************/
-.news-list{
+
+.news-list {
   margin-bottom: 16px;
 }
 .news-list-element {
@@ -475,6 +539,13 @@ html.for-iframe body {
 }
 .news-list-element .text p {
   margin: 0;
+}
+
+/* NEW ************/
+.opinion-new-link{color: #ae9a86;text-decoration: none;}
+#opinions-new{
+  border-top: 1px solid #CCC;
+  padding-top: 16px;
 }
 
 /* main-footer *****************************************************/
@@ -610,15 +681,19 @@ table.cart-options td.td-select {
   padding-right: 10px;
   max-width: 186px;
 }
-.detail-info.sec{
- width: 40%;
+.detail-info.sec {
+  width: 40%;
 }
 .tabber-content header h3 {
-  display: inline-block;
-  font-size: 16px;
   line-height: 24px;
-  color: #666;
   margin-bottom: 8px;
+  color: #624931;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+.tabber-content header h3 .fa {
+  margin-right: .2em;
 }
 .opinions li {
   padding: 16px 0;
@@ -681,6 +756,47 @@ fieldset.legal {
 
 .my-cart {
   padding-bottom: 32px;
+}
+
+/* FAQ ***************/
+.pregunta {    
+    border-bottom: 1px solid #DDD;
+    border-radius: 2px;
+    position: relative;
+
+}
+.pregunta .CollapsiblePanelTab{
+  padding: 10px 0 10px 24px;
+font-size: 11px;
+font-weight: bold;
+cursor:pointer;
+}
+.pregunta .CollapsiblePanelTab:before {
+    border-color: transparent transparent transparent #aaa;
+    border-style: solid;
+    border-width: 5px 8px;
+    content: "";
+    display: block;
+    height: 0;
+    left: 8px;
+    position: absolute;
+    top: 14px;
+    width: 0;
+    -webkit-transition:all .3s;
+    -ms-transition:all .3s;
+    transition:all .3s;
+}
+.pregunta.CollapsiblePanelOpen .CollapsiblePanelTab:before {
+    /*border-color: #8f5927 transparent transparent;
+    border-width: 12px 8px;*/
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: 3px;
+    top: 19px;
+}
+.pregunta .CollapsiblePanelContent {
+    padding: 0 0 0 24px;
 }
 
 /* MEDIA QUERIES ************************************************************************************************************/

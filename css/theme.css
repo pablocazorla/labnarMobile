@@ -508,13 +508,13 @@ mark,
   padding: 0.2em;
 }
 blockquote {
-  padding: 28px;
-  margin: 0 0 14px;
-  font-size: 19.6px;
-  font-style: italic;
   border-left: 5px solid #dddddd;
   color: #848484;
+  font-size: 14px;
+  font-style: italic;
   line-height: 1.3em;
+  margin: 0 0 14px;
+  padding: 18px;
 }
 blockquote *:last-child {
   margin-bottom: 0;
@@ -543,13 +543,20 @@ a.disabled:focus,
   color: #85a5ad;
   text-decoration: none;
 }
+.upper-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.3em;
+  text-decoration: none;
+}
 .align-left {
   text-align: left;
 }
 .align-right {
   text-align: right;
 }
-.align-center {
+.align-center,
+.centrado {
   text-align: center;
 }
 .align-justify {
@@ -597,38 +604,117 @@ canvas {
   display: block;
   margin: 0 0 14px;
 }
-ul.list,
-ol.list {
-  margin-bottom: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+.the-content h1 {
+  font-size: 23.4px;
+  line-height: 1.3em;
 }
-ul.list li,
-ol.list li {
+.the-content h2 {
+  font-size: 17.92314815px;
+  line-height: 1.3em;
+}
+.the-content h3 {
+  font-size: 14.25185185px;
+  line-height: 1.3em;
+}
+.the-content h4 {
+  font-size: 12.025px;
+  line-height: 1.3em;
+}
+.the-content h5 {
+  font-size: 10.88148148px;
+  line-height: 1.3em;
+}
+.the-content h6{
+  font-size: 10.46018519px;
+  line-height: 1.3em;
+}
+.the-content h1,
+.the-content h2,
+.the-content h3,
+.the-content h4,
+.the-content h5,
+.the-content h6{
+  font-weight: normal;
+  color: #111;
+  margin-bottom: 13px;
+  padding: 9px 0 4px;
+  color:#624931;
+  clear: both;
+}
+.the-content h3,
+.the-content h4,
+.the-content h5,
+.the-content h6 {
+  font-weight: bold;
+}
+.the-content h3{
+  border-bottom: dotted 1px #DDD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.the-content ul,
+.the-content ol {
+  margin-bottom: 14px;
+  padding-left: 2em;
+}
+.the-content li {
   padding-top: 3.5px;
   padding-bottom: 3.5px;
 }
-ul.list,
-ol.list,
-.list ul,
-.list ol {
-  padding-left: 2em;
-}
-ul.list {
+.the-content ul {
   list-style: disc outside none;
 }
-ol.list {
+.the-content ol {
   list-style: decimal outside none;
 }
-.list ul {
+.the-content ul ul {
   list-style: circle outside none;
 }
-.list ol {
+.the-content ol ol {
   list-style: lower-alpha outside none;
 }
-.list li ul {
+.the-content ul ul ul {
   list-style: square outside none;
 }
-.list li ol {
+.the-content ol ol ol {
   list-style: lower-roman outside none;
+}
+.the-content img {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
 }
 table {
   font-size: 11px;
@@ -3425,31 +3511,42 @@ img.responsive.unlimited {
   border-color: #ae9a86;
   color: #FFF
 }
+
 /* MODAL */
-.modal{
-  position: fixed;z-index: 1200;
-  left:0;right:0;bottom: 0;
-  background-color: rgba(0,0,0,.5);
+
+.modal {
+  position: fixed;
+  z-index: 1200;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
   overflow: hidden;
   height: 0;
   opacity: 0;
-  -webkit-transition:opacity .3s;
-  -ms-transition:opacity .3s;
-  transition:opacity .3s;
+  -webkit-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  transition: opacity .3s;
 }
-.modal.show{
-  top:0;height: auto;opacity: 1;
+.modal.show {
+  top: 0;
+  height: auto;
+  opacity: 1;
 }
-.modal-body{
+.modal-body {
   position: absolute;
-  top:16px;left:16px;right:16px;bottom: 16px;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
   background-color: #FFF;
-  box-shadow: 0 1px 6px rgba(0,0,0,.4);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .4);
   border-radius: 2px
 }
-.modal-close{
+.modal-close {
   position: absolute;
-  top:0;right:0;
+  top: 0;
+  right: 0;
   line-height: 20px;
   height: 20px;
   width: 20px;
@@ -3457,26 +3554,18 @@ img.responsive.unlimited {
   cursor: pointer;
   color: #666
 }
-.modal-scroller{
+.modal-scroller {
   position: absolute;
-  top:16px;left:16px;right:16px;bottom: 16px;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
   overflow: hidden;
-  overflow-y:auto; 
+  overflow-y: auto;
 }
-.modal-scroller iframe{
+.modal-scroller iframe {
   border: none;
   margin: 0;
   width: 100% !important;
   height: 100% !important;
 }
-
-
-
-
-
-
-
-
-
-
-

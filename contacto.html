@@ -25,11 +25,30 @@
             <img src="img/logo.svg">
           </a>
         </div>
-        <ul>
-          <li><a href="editorial.html"><i class="fa fa-book"></i> Editorial</a></li>
-          <li><a href="noticias.html"><i class="fa fa-newspaper-o"></i> Noticias</a></li>
-          <li><a href="contacto.html"><i class="fa fa-envelope"></i> Contacto</a></li>
-        </ul>
+        <div class="main-menu-nav">
+          <ul>
+            <li><a href="editorial.html"><i class="fa fa-book"></i> Editorial</a></li>
+            <li><a href="noticias.html"><i class="fa fa-newspaper-o"></i> Noticias</a></li>
+            <li><a href="contacto.html"><i class="fa fa-envelope"></i> Contacto</a></li>
+          </ul>
+          <nav class="clearfix map-container">
+            <ul class="map">
+              <li><a href="ofrecemos.html">Qué ofrecemos</a></li>
+              <li><a href="formas-pago.html">Formas de pago</a></li>
+              <li><a href="faq.html">Preguntas frecuentes</a></li>
+            </ul>
+            <ul class="map">
+              <li><a href="librerias.html">Librerías</a></li>
+              <li><a href="manuscritos.html">Manuscritos</a></li>
+              <li><a href="legal.html" class="show-modal">Aviso legal</a></li>
+            </ul>
+          </nav>
+          <nav class="map-social">
+            <a href="https://www.facebook.com/edicioneslabnar" target="_blank" class="soc-ic"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://twitter.com/EdicionesLabnar" target="_blank" class="soc-ic"><i class="fa fa-twitter-square"></i></a>
+            <a href="mailto:info@edicioneslabnar.com" target="_blank" class="soc-email">info@edicioneslabnar.com</a>
+          </nav>
+        </div>
       </menu>
       <div id="menu-backdrop" class="menu-toggle"></div>
       <a href="index.html" class="brand">
@@ -85,7 +104,7 @@
             </fieldset>
             <fieldset class="legal">
               <input type="checkbox" id="legal-opinion-c">
-              <label for="legal-opinion-c"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a href="" class="show-modal">Aviso Legal</a>.
+              <label for="legal-opinion-c"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a href="legal.html" class="show-modal">Aviso Legal</a>.
             </fieldset>
             <p class="align-center">
               <button class="btn btn-secondary btn-big"> <i class="fa fa-paper-plane"></i>Enviar</button>
@@ -95,7 +114,7 @@
       </div>
       <footer id="main-footer">
         <div class="wrap">
-          2015 &copy; LABNAR HOLDING S.L. | <a href="" class="show-modal">Aviso Legal</a> | <a href="">Diseño Web</a>
+          2015 &copy; LABNAR HOLDING S.L. | <a href="legal.html" class="show-modal">Aviso Legal</a> | <a href="">Diseño Web</a>
         </div>
       </footer>
     </div>
@@ -283,7 +302,7 @@
         </section>
       </div>
     </div>
-  </article>  
+  </article>
   <script src="js/libs/jquery-1.11.2.min.js"></script>
   <script src="js/app.js"></script>
 </body>

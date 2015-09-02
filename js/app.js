@@ -119,18 +119,7 @@ var labnarMobile = function($) {
 	})($('.videos iframe'));
 
 	// Modal
-
-	/*
-
-	<div class="modal">
-    <div class="modal-body">
-      <div class="modal-close"><i class="fa fa-times"></i></div>
-      <div class="modal-scroller"></div>
-    </div>
-  </div>
-	*/
 	var Modal = (function() {
-
 		var $modal = $('<div class="modal"></div>').appendTo('body'),
 			$modalBody = $('<div class="modal-body"></div>').appendTo($modal),
 			$modalClose = $('<div class="modal-close"><i class="fa fa-times"></i></div>').appendTo($modalBody),
@@ -153,14 +142,40 @@ var labnarMobile = function($) {
 
 		return m;
 	})();
-	$('.show-modal').click(function(e){
+	$('.show-modal').click(function(e) {
 		e.preventDefault();
-		Modal.show();
+		var url = $(this).attr('href');
+		Modal.content('<iframe src="' + url + '"/>').show();
 	});
 
-	// AVISO LEGAL
-	Modal.content('<iframe src="legal.html"/>');
+	// Faq
+	$('.pregunta').each(function() {
+		var $this = $(this),
+			$CollapsiblePanelTab = $this.find('.CollapsiblePanelTab'),
+			$CollapsiblePanelContent = $this.find('.CollapsiblePanelContent'),
+			shown = false,
+			moving = false,
+			duration = 300;
 
+		$CollapsiblePanelTab.click(function() {
+			if (!moving) {
+				moving = true;
+				if (!shown) {
+					$this.removeClass('CollapsiblePanelClosed').addClass('CollapsiblePanelOpen');
+					$CollapsiblePanelContent.slideDown(duration, function() {
+						shown = true;
+						moving = false;
+					});
+				} else {
+					$this.removeClass('CollapsiblePanelOpen').addClass('CollapsiblePanelClosed');
+					$CollapsiblePanelContent.slideUp(duration, function() {
+						shown = false;
+						moving = false;
+					});
+				}
+			}
+		});
+	});
 
 
 };
