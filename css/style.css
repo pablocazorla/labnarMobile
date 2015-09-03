@@ -72,9 +72,12 @@ html.for-iframe body {
 #main-menu .main-menu-header {
   height: 40px;
 }
-#main-menu .main-menu-nav{
+#main-menu .main-menu-nav {
   position: absolute;
-  top: 40px;bottom: 0;left: 0;right: 0;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -89,9 +92,7 @@ html.for-iframe body {
   color: rgba(255, 255, 255, .8);
   border-bottom: 1px solid #453D35;
   text-decoration: none;
-background-color: #554b41;
-
-
+  background-color: #554b41;
 }
 #main-menu ul li a:hover {
   background-color: rgba(255, 255, 255, .05);
@@ -100,58 +101,46 @@ background-color: #554b41;
 #main-menu ul li a .fa {
   width: 25px;
 }
-.map-container{
+.map-container {
   padding: 16px 36px;
   background-color: #3C352E;
 }
-#main-menu ul.map{
-  float:left;
+#main-menu ul.map {
+  float: left;
   width: 50%;
   font-size: 11px;
   text-align: center;
 }
 #main-menu ul.map li a {
-    border-bottom: none;
-    color: rgba(255, 255, 255, 0.8);
-    display: block;
-    height: auto;
-    line-height: 12px;
-    padding: 6px 0;
-    text-decoration: none;
-    background-color: transparent;
+  border-bottom: none;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  height: auto;
+  line-height: 12px;
+  padding: 6px 0;
+  text-decoration: none;
+  background-color: transparent;
 }
-
-#main-menu .map-social{
+#main-menu .map-social {
   text-align: center;
   padding: 16px;
 }
-#main-menu .map-social a{
+#main-menu .map-social a {
   text-decoration: none;
 }
-#main-menu .map-social .soc-ic{
+#main-menu .map-social .soc-ic {
   display: inline-block;
   font-size: 36px;
   line-height: 1em;
   padding: 0 8px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   margin-bottom: 8px
 }
-#main-menu .map-social .soc-email{
+#main-menu .map-social .soc-email {
   display: block;
   font-size: 11px;
   line-height: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
 #main-header #menu-backdrop {
   display: block;
   position: fixed;
@@ -421,7 +410,7 @@ background-color: #554b41;
 .paper.padded p:last-child {
   margin-bottom: 0;
 }
-.paper.the-content{
+.paper.the-content {
   margin-bottom: 16px;
 }
 
@@ -542,8 +531,12 @@ background-color: #554b41;
 }
 
 /* NEW ************/
-.opinion-new-link{color: #ae9a86;text-decoration: none;}
-#opinions-new{
+
+.opinion-new-link {
+  color: #ae9a86;
+  text-decoration: none;
+}
+#opinions-new {
   border-top: 1px solid #CCC;
   padding-top: 16px;
 }
@@ -728,8 +721,9 @@ fieldset.legal {
   font-size: 11px;
   line-height: 1.1em;
 }
-.form-opinion .legal label {
-  padding: 0;
+.legal label {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
 }
 .videos iframe {
   width: 100% !important;
@@ -759,44 +753,115 @@ fieldset.legal {
 }
 
 /* FAQ ***************/
-.pregunta {    
-    border-bottom: 1px solid #DDD;
-    border-radius: 2px;
-    position: relative;
 
+.pregunta {
+  border-bottom: 1px solid #DDD;
+  border-radius: 2px;
+  position: relative;
 }
-.pregunta .CollapsiblePanelTab{
+.pregunta .CollapsiblePanelTab {
   padding: 10px 0 10px 24px;
-font-size: 11px;
-font-weight: bold;
-cursor:pointer;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .pregunta .CollapsiblePanelTab:before {
-    border-color: transparent transparent transparent #aaa;
-    border-style: solid;
-    border-width: 5px 8px;
-    content: "";
-    display: block;
-    height: 0;
-    left: 8px;
-    position: absolute;
-    top: 14px;
-    width: 0;
-    -webkit-transition:all .3s;
-    -ms-transition:all .3s;
-    transition:all .3s;
+  border-color: transparent transparent transparent #aaa;
+  border-style: solid;
+  border-width: 5px 8px;
+  content: "";
+  display: block;
+  height: 0;
+  left: 8px;
+  position: absolute;
+  top: 14px;
+  width: 0;
+  -webkit-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
 .pregunta.CollapsiblePanelOpen .CollapsiblePanelTab:before {
-    /*border-color: #8f5927 transparent transparent;
+  /*border-color: #8f5927 transparent transparent;
     border-width: 12px 8px;*/
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    left: 3px;
-    top: 19px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 3px;
+  top: 19px;
 }
 .pregunta .CollapsiblePanelContent {
-    padding: 0 0 0 24px;
+  padding: 0 0 0 24px;
+}
+
+/*************************************************/
+
+.timeline {
+  margin-bottom: 16px;
+}
+.timeline ul {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 3px;
+}
+.timeline ul li {
+  display: block;
+  float: left;
+  width: 20%;
+  position: relative;
+}
+.timeline ul li.active {
+  color: #111;
+  font-weight: bold
+}
+.timeline ul li:after {
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 1px;
+  height: 8px;
+  background-color: #BBB;
+  content: "";
+}
+.timeline .tline {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #DDD;
+  border-radius: 3px;
+}
+.timeline .tline .tline-progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3%;
+  background-color: #AA9C8E;
+  border-radius: 3px;
+  -webkit-transition: width .9s;
+  -ms-transition: width .9s;
+  transition: width .9s;
+}
+.timeline .tline .tline-progress .tline-icon {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #007a99;
+  color: #FFF;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+}
+.timeline .tline .tline-progress .tline-icon .fa {
+  position: relative;
+  left: 3px;
 }
 
 /* MEDIA QUERIES ************************************************************************************************************/

@@ -177,6 +177,16 @@ var labnarMobile = function($) {
 		});
 	});
 
+	// Timeline
+	$('.timeline').each(function() {
+		var $this = $(this),
+			step = parseInt($this.attr('data-step'));
+		if (!isNaN(step)) {
+			$this.find('li').eq(step - 1).addClass('active');
+			$this.find('.tline-progress').css('width', step * 20 - 10 + '%');
+		}
+	});
+
 
 };
 
