@@ -327,29 +327,47 @@ html.for-iframe body {
 }
 .menudinamico a {
   display: block;
-  padding: 0 16px;
-  line-height: 40px;
-  height: 40px;
+  padding: 9px 16px;
+  /*line-height: 40px;*/
+  /*height: 40px;*/
   border-bottom: 1px solid #DDD;
   text-decoration: none;
+  position: relative;
 }
 .menudinamico a:hover {
   text-decoration: none;
   opacity: .7;
 }
-.menudinamico > ul > li > a {
+.menudinamico > ul > li > a .title {
   font-weight: 700;
+}
+.menudinamico ul ul a {
+  padding-left: 32px;
 }
 .menudinamico ul ul a:before {
   content: '·';
-  display: inline-block;
-  width: 16px
+  display: block;
+  width: 16px;
+  position: absolute;
+  top: 9px;
+  left: 16px;
 }
 .menudinamico ul ul ul a {
-  color: #888;
+  color: #666;
+  padding-left: 48px;
 }
 .menudinamico ul ul ul a:before {
-  margin-left: 16px;
+  left: 32px;
+}
+.menudinamico ul ul ul a:before {}
+.menudinamico a .title {
+  margin-bottom: 4px;
+}
+.menudinamico a .description {
+  font-size: 10px;
+  line-height: 1.1em;
+  color: #888;
+  font-style: italic;
 }
 
 /* GRID SYSTEM ******************/
@@ -862,6 +880,18 @@ fieldset.legal {
 .timeline .tline .tline-progress .tline-icon .fa {
   position: relative;
   left: 3px;
+}
+
+/* Formas de pago */
+
+.pay-col-1 {
+  float: left;
+  width: 60%;
+  padding-right: 8px;
+}
+.pay-col-2 {
+  float: left;
+  width: 40%;
 }
 
 /* MEDIA QUERIES ************************************************************************************************************/
