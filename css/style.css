@@ -1,12 +1,3 @@
-/* Color themes:
-
-blue: #007a99
-
-orange: #8f5927
-
-
-*/
-
 html,
 body {
   overflow: hidden;
@@ -360,14 +351,13 @@ html.for-iframe body {
   left: 32px;
 }
 .menudinamico ul ul ul a:before {}
-.menudinamico a .title {
-  margin-bottom: 4px;
-}
 .menudinamico a .description {
   font-size: 10px;
   line-height: 1.1em;
   color: #888;
   font-style: italic;
+  margin-top: 4px;
+  display: none;
 }
 
 /* GRID SYSTEM ******************/
@@ -453,6 +443,10 @@ html.for-iframe body {
 
 /* product-list ********************************/
 
+.product-list-blockquote {
+  margin-bottom: 24px;
+  background: url('../img/comillas.png') top right no-repeat;
+}
 .product-thumbnail {
   width: 100% !important;
   height: auto !important;
@@ -892,6 +886,64 @@ fieldset.legal {
 .pay-col-2 {
   float: left;
   width: 40%;
+}
+
+/* alert-cookies */
+
+@-webkit-keyframes alertAnim {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@-moz-keyframes alertAnim {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@-o-keyframes alertAnim {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes alertAnim {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.alert-cookies {
+  position: fixed;
+  z-index: 1001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 16px 0;
+  background-color: rgba(0, 0, 0, .9);
+  color: #FFF;
+  text-align: center;
+  -webkit-animation: alertAnim .8s 1;
+  -moz-animation: alertAnim .8s 1;
+  -o-animation: alertAnim .8s 1;
+  animation: alertAnim .8s 1;
 }
 
 /* MEDIA QUERIES ************************************************************************************************************/

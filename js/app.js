@@ -1,7 +1,15 @@
 var labnarMobile = function($) {
 	"use strict";
 
-	// HEADER *************************************
+	// Cookies
+	$('.alert-cookies').each(function() {
+		var $this = $(this);
+		$this.find('.btn-primary').click(function(e) {
+			e.preventDefault();
+			$this.fadeOut(300);
+		});
+	});
+
 	// Menu
 	var menu = {
 		show: false,
@@ -186,8 +194,6 @@ var labnarMobile = function($) {
 			$this.find('.tline-progress').css('width', step * 20 - 10 + '%');
 		}
 	});
-
-
 };
 
 jQuery('document').ready(function() {

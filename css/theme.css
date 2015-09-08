@@ -604,18 +604,6 @@ canvas {
   display: block;
   margin: 0 0 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .the-content h1 {
   font-size: 23.4px;
   line-height: 1.3em;
@@ -636,7 +624,7 @@ canvas {
   font-size: 10.88148148px;
   line-height: 1.3em;
 }
-.the-content h6{
+.the-content h6 {
   font-size: 10.46018519px;
   line-height: 1.3em;
 }
@@ -645,12 +633,12 @@ canvas {
 .the-content h3,
 .the-content h4,
 .the-content h5,
-.the-content h6{
+.the-content h6 {
   font-weight: normal;
   color: #111;
   margin-bottom: 13px;
   padding: 9px 0 4px;
-  color:#624931;
+  color: #624931;
   clear: both;
 }
 .the-content h3,
@@ -659,31 +647,9 @@ canvas {
 .the-content h6 {
   font-weight: bold;
 }
-.the-content h3{
+.the-content h3 {
   border-bottom: dotted 1px #DDD;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .the-content ul,
 .the-content ol {
   margin-bottom: 14px;

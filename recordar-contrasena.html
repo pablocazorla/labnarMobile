@@ -75,79 +75,17 @@
       <div class="wrap">
         <section class="registration">
           <header class="header-section">
-            <h2>Nuevo Usuario</h2>
-            <a href="#account-link" class="click-link btn btn-link btn-small float-right">Ya estoy registrado</a>
+            <h2>Recordar contraseña</h2>
           </header>
-          <form method="post" class="paper" action="http://www.claveweb.info/labnar/usuario-validar?pg=" class="clearfix">
-            <h3>Registrarse</h3>
-            <p>Introduce todos los datos y date de alta como cliente en nuestra web. Tras validarte como cliente podrás realizar pedidos con total normalidad.</p>
-            <p class="required-advert">* Campos requeridos</p>
+          <form method="post" class="paper" action="" class="clearfix">
+            <h3>Te la enviamos por email.</h3>            
             <fieldset>
-              <label for="name-r" class="required">Nombre:</label>
-              <input type="text" value="" id="name-r" name="name-r" placeholder="Su nombre" />
+              <label for="email-rc">Email:</label>
+              <input type="email" value="" id="email-rc" name="email-rc" placeholder="nombre@ejemplo.com" />
             </fieldset>
-            <fieldset>
-              <label for="lastname-r" class="required">Apellidos:</label>
-              <input type="text" value="" id="lastname-r" name="lastname-r" placeholder="Sus apellidos" />
-            </fieldset>
-            <fieldset>
-              <label for="company-r">Empresa:</label>
-              <input type="text" value="" id="company-r" name="company-r" placeholder="Su empresa" />
-            </fieldset>
-            <fieldset>
-              <label for="address-r" class="required">Dirección:</label>
-              <input type="text" value="" id="address-r" name="address-r" placeholder="Su dirección" />
-            </fieldset>
-            <fieldset>
-              <label for="postal-r" class="required">Código Postal:</label>
-              <input type="text" value="" id="postal-r" name="postal-r" placeholder="000000" />
-            </fieldset>
-            <fieldset>
-              <label for="city-r" class="required">Población:</label>
-              <input type="text" value="" id="city-r" name="city-r" placeholder="Su población" />
-            </fieldset>
-            <fieldset>
-              <label for="state-r" class="required">Provincia:</label>
-              <input type="text" value="" id="state-r" name="state-r" placeholder="Su provincia" />
-            </fieldset>
-            <fieldset>
-              <label for="country-r" class="required">País:</label>
-              <select id="country-r" name="country-r">
-                <option value="0">España - Baleares</option>
-                <option value="1">España - Canarias, Ceuta o Melilla</option>
-                <option value="2">España - Península</option>
-              </select>
-            </fieldset>
-            <fieldset>
-              <label for="phone-r" class="required">Teléfono:</label>
-              <input type="tel" value="" id="phone-r" name="phone-r" placeholder="000 000 0000" />
-            </fieldset>
-            <fieldset>
-              <label for="mobile-r">Teléfono (móvil):</label>
-              <input type="tel" value="" id="mobile-r" name="mobile-r" placeholder="000 000 0000" />
-            </fieldset>
-            <fieldset>
-              <label for="email" class="required">Email:</label>
-              <input type="email" value="" id="email-r" name="email-r" placeholder="nombre@ejemplo.com" />
-            </fieldset>
-            <fieldset>
-              <label for="cif-r" class="required">CIF/NIF:</label>
-              <input type="text" value="" id="cif-r" name="cif-r" placeholder="0000000000" />
-            </fieldset>
-            <fieldset>
-              <label for="password-r" class="required">Clave:</label>
-              <input type="password" value="" id="password-r" name="password-r" placeholder="**********" />
-            </fieldset>
-            <fieldset>
-              <label for="password2-r" class="required">Repita clave:</label>
-              <input type="password" value="" id="password2-r" name="password2-r" placeholder="**********" />
-            </fieldset>
-            <fieldset class="legal">
-              <input type="checkbox" id="legal-opinion">
-              <label for="legal-opinion"> <span class="required-ast">*</span> Declaro haber leido y aceptado el</label> <a class="show-modal" href="legal.html">Aviso Legal</a>.
-            </fieldset>
+            
             <p class="align-center">
-              <input type="submit" class="btn btn-secondary btn-big" value="Enviar" id="enviar-r" name="enviar-r" />
+              <input type="submit" class="btn btn-secondary btn-big" value="Enviar" id="enviar-rc" name="enviar-rc" />
             </p>
           </form>
         </section>
@@ -250,7 +188,7 @@
             <p class="align-center">
               <input type="submit" class="btn btn-secondary btn-big" value="Acceder" id="acceder" name="acceder" />
             </p>
-            <p class="align-center forgot-pass"><a href="recordar-contrasena.html" class="btn btn-link btn-small">¿Olvidaste la contraseña?</a></p>
+            <p class="align-center forgot-pass"><a href="#start-link" class="btn btn-link btn-small click-link">¿Olvidaste la contraseña?</a></p>
           </form>
         </section>
       </div>
